@@ -266,7 +266,27 @@
         align-items: center;
         gap: 1rem;
         padding-left: 2rem;
+        flex-direction: row; /* Default layout */
+        text-align: left;
     }
+
+    @media (max-width: 800px) { /* Adjust the breakpoint as needed */
+        .logo-title {
+            flex-direction: column; /* Stack the elements vertically */
+            align-items: center; /* Center align the logo and text */
+            gap: 0.5rem; /* Adjust spacing for smaller screens */
+            text-align: center; /* Center the text */
+        }
+
+        .logo-title h1 {
+            font-size: 2rem; /* Optional: Adjust font size for better fit */
+        }
+
+        .logo {
+            height: 40px; /* Optional: Adjust logo size for smaller screens */
+        }
+    }
+
 
     .logo {
         height: 50px;
@@ -274,6 +294,18 @@
         /*background: white; !* White background behind the logo *!*/
         border-radius: 10px;
         padding: 0.03rem; /* Optional padding to visually separate the logo from the background edges */
+    }
+
+    .highlighted-link {
+        color: #ff2557; /* Highlight color */
+				opacity: 0.3;
+        /*text-decoration: underline; !* Underline the text *!*/
+        font-weight: bold; /* Make it bold for emphasis */
+    }
+
+    .highlighted-link:hover {
+        color: #af6cbd; /* Slightly darker color on hover */
+        text-decoration: none; /* Optional: remove underline on hover */
     }
 </style>
 
@@ -346,6 +378,8 @@
 	{/if}
 
 	<footer class="footer">
-		made with ❤️ in 🇨🇭 for Volt Cyprus
+		made with ❤️ in 🇨🇭 for Volt Cyprus<br />
+		source available <a href="https://github.com/andreas16700/multiple_timers" target="_blank" class="highlighted-link">here</a>
 	</footer>
+
 </main>
