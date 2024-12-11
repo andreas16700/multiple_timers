@@ -290,8 +290,7 @@
     .logo {
         height: 50px;
         width: auto;
-        /*background: white; !* White background behind the logo *!*/
-        border-radius: 10px;
+        /*border-radius: 10px;*/
         padding: 0.03rem; /* Optional padding to visually separate the logo from the background edges */
     }
 
