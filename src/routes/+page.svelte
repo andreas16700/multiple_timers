@@ -317,7 +317,7 @@
 		</div>
 		<div class="top-controls">
 			<div class="inputs">
-				<label>Default min:</label>
+				<label>min:</label>
 				<input type="number" bind:value={defaultMinutes} min="0" />
 				<label>sec:</label>
 				<input type="number" bind:value={defaultSeconds} min="0" max="59" />
